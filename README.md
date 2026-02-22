@@ -3,6 +3,14 @@
 > **⚠️ This is a reference snapshot, not a maintained project.**
 > The purpose of this repository is to serve as a codebase that you can show to an AI assistant (Claude, ChatGPT, Codex, etc.) to help you build a similar system. It is not intended to be cloned and run as-is.
 
+## Screenshots
+
+| Idle | Voice Input | Thinking | Speaking |
+|------|-------------|----------|----------|
+| ![Idle](docs/screenshots/01-idle.png) | ![Voice Input](docs/screenshots/02-voice-input.png) | ![Thinking](docs/screenshots/03-thinking.png) | ![Speaking](docs/screenshots/04-speaking.png) |
+
+> Character art: [WhiteCUL立ち絵素材 by moiky](https://seiga.nicovideo.jp/seiga/im11047926) — not included in this repository. You must supply your own images.
+
 ## What Is This?
 
 An iOS app that turns an iPhone (mounted on an [Insta360 Flow Pro](https://www.insta360.com/product/insta360-flow-pro) or any DockKit-compatible motorized stand) into a **physical AI avatar** with:
@@ -93,6 +101,12 @@ See [`spec/host-scripts.md`](spec/host-scripts.md) for full documentation.
 - DockKit-compatible stand (optional, for motor control)
 - A TTS engine on your network (VOICEVOX, ElevenLabs, etc.)
 
+## Credits
+
+- **Character art in screenshots:** [WhiteCUL立ち絵素材 by moiky](https://seiga.nicovideo.jp/seiga/im11047926) — used under the original distribution terms. The character image files are **not included** in this repository.
+- **WhiteCUL:** A character from the [VOICEVOX](https://voicevox.hiroshiba.jp/) project
+
 ## License
 
 MIT — The code is free to use. Character art is NOT included and must be sourced separately.
+Screenshots contain WhiteCUL character art by moiky, used for demonstration purposes only.
