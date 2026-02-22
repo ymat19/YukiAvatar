@@ -76,7 +76,7 @@ iPhoneを [Insta360 Flow Pro](https://www.insta360.com/product/insta360-flow-pro
 
 ```bash
 # クイックスタート
-export YUKI_IPHONE_IP=192.168.0.28  # iPhoneのIPアドレス
+export YUKI_IPHONE_IP=<iPhoneのIPアドレス>
 ./host-scripts/yuki_cmd.sh "こんにちは" --expression happy --motion smallNod
 ```
 

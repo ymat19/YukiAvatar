@@ -76,7 +76,7 @@ The `host-scripts/` directory contains the backend tools that control the app:
 
 ```bash
 # Quick start
-export YUKI_IPHONE_IP=192.168.0.28  # your iPhone's IP
+export YUKI_IPHONE_IP=<your-iphone-ip>
 ./host-scripts/yuki_cmd.sh "こんにちは" --expression happy --motion smallNod
 ```
 

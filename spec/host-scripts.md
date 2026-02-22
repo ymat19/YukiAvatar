@@ -15,7 +15,7 @@ Scripts that run on your **host machine** (Mac, Linux, etc.) to control the iPho
 
 | Variable | Default | Description |
 |----------|---------|-------------|
-| `YUKI_IPHONE_IP` | `192.168.0.28` | iPhone's IP address on LAN |
+| `YUKI_IPHONE_IP` | (required) | iPhone's IP address on LAN |
 | `YUKI_IPHONE_PORT` | `8765` | WebSocket server port |
 | `VOICEVOX_URL` | `http://localhost:50021` | VOICEVOX API endpoint |
 

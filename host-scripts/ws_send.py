@@ -6,13 +6,16 @@ Usage:
     python3 ws_send.py '{"speech": "Hello", "audio": "..."}' --wait --timeout 30
 
 Environment:
-    YUKI_IPHONE_IP   - iPhone IP address (default: 192.168.0.28)
+    YUKI_IPHONE_IP   - iPhone IP address (required)
     YUKI_IPHONE_PORT - WebSocket port (default: 8765)
 """
 
 import asyncio, os, sys, base64, struct, json
 
-iPHONE_IP = os.environ.get("YUKI_IPHONE_IP", "192.168.0.28")
+iPHONE_IP = os.environ.get("YUKI_IPHONE_IP")
+if not iPHONE_IP:
+    print("Error: YUKI_IPHONE_IP environment variable is required", file=sys.stderr)
+    sys.exit(1)
 iPHONE_PORT = int(os.environ.get("YUKI_IPHONE_PORT", "8765"))
 
 def decode_ws_frame(data):
