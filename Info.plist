@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>NSCameraUsageDescription</key>
+    <string>Camera is used for DockKit face tracking</string>
+    <key>NSLocalNetworkUsageDescription</key>
+    <string>Local network is used to receive commands from the control server</string>
+    <key>NSBonjourServices</key>
+    <array>
+        <string>_ws._tcp</string>
+    </array>
+    <key>NSMicrophoneUsageDescription</key>
+    <string>Microphone is used for voice input to talk with Yuki</string>
+    <key>NSSpeechRecognitionUsageDescription</key>
+    <string>Speech recognition is used to understand voice commands</string>
+</dict>
+</plist>

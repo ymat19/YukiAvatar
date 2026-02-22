@@ -1,0 +1,49 @@
+# === Copyrighted Assets ===
+# WhiteCUL character art (copyright: くろ州 / WhiteCUL Project)
+# Users must supply their own avatar images
+assets/
+HelloWorld/Resources/
+scripts/
+
+# === Build Artifacts ===
+build/
+DerivedData/
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# === Xcode User Data ===
+xcuserdata/
+*.xcuserstate
+*.xcworkspacedata
+
+# === Secrets & Credentials ===
+*.p12
+*.mobileprovision
+*.provisionprofile
+*.cer
+*.pem
+*.key
+*.secret
+**/secrets/
+**/credentials/
+
+# === git-secret ===
+!.gitsecret/
+.gitsecret/keys/random_seed
+*.secret
+
+# === OS / IDE ===
+.DS_Store
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# === Plans (internal development notes) ===
+plans/
+
+# === Backups ===
+*.backup
+*.bak
