@@ -47,7 +47,30 @@ The app is the **display + motor controller**. Your AI backend synthesizes speec
 | `StatusBarView.swift` | Connection status pills (WebSocket, DockKit, mic, audio) |
 | `CameraManager.swift` | AVCaptureSession for camera preview (DockKit requires active camera) |
 
-See [`spec/`](spec/) for detailed protocol and architecture documentation.
+See [`spec/`](spec/) for detailed documentation:
+- [`architecture.md`](spec/architecture.md) — System diagram and data flow
+- [`websocket-protocol.md`](spec/websocket-protocol.md) — Full WebSocket API reference
+- [`host-scripts.md`](spec/host-scripts.md) — Backend control scripts
+- [`voice-input.md`](spec/voice-input.md) — On-device voice input (iOS 26+)
+- [`dockkit-integration.md`](spec/dockkit-integration.md) — Motorized stand control
+- [`idle-scenes.md`](spec/idle-scenes.md) — Idle animation system
+
+## Host Scripts (Backend Control)
+
+The `host-scripts/` directory contains the backend tools that control the app:
+
+| Script | Purpose |
+|--------|---------|
+| `yuki_cmd.sh` | Main command — TTS synthesis (VOICEVOX) + expression + motion, sent as one WebSocket message |
+| `ws_send.py` | Raw WebSocket client for sending arbitrary JSON commands |
+
+```bash
+# Quick start
+export YUKI_IPHONE_IP=192.168.0.28  # your iPhone's IP
+./host-scripts/yuki_cmd.sh "こんにちは" --expression happy --motion smallNod
+```
+
+See [`spec/host-scripts.md`](spec/host-scripts.md) for full documentation.
 
 ## What's NOT Included
 
