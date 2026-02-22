@@ -1,5 +1,7 @@
 # Yuki Avatar — AI-Driven Physical Avatar System for iPhone
 
+**English** | [日本語](README.ja.md)
+
 > **⚠️ This is a reference snapshot, not a maintained project.**
 > The purpose of this repository is to serve as a codebase that you can show to an AI assistant (Claude, ChatGPT, Codex, etc.) to help you build a similar system. It is not intended to be cloned and run as-is.
 
